@@ -52,24 +52,21 @@ Your code should not use `key:value`.
 
 ```js
 const createPerson = (name, age, gender) => {
-  // Only change code below this line
   return {
     name: name,
     age: age,
     gender: gender
   };
-  // Only change code above this line
 };
 ```
 
 # --solutions--
 
 ```js
-const createPerson = (name, age, gender) => {
-  return {
+const createPerson = (name, age, gender) => ({
     name,
     age,
     gender
-  };
-};
+  });
+
 ```
